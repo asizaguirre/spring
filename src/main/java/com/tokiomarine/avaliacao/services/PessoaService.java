@@ -7,9 +7,12 @@ public interface PessoaService {
 
 	Pessoa getPessoaById(Integer id);
 
-	Pessoa savePessoa(Pessoa pessoa);
-
+	Object savePessoa(Pessoa pessoa);
 
 	void deletePessoa(Integer id);
+
+	void sendToQueue(Pessoa str);
+
+	void sendToTopic(Pessoa str);
 
 }

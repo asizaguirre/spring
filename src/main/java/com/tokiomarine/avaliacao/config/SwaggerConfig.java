@@ -23,12 +23,6 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 				.paths(regex("/pessoa.*")).build().apiInfo(metaData());
 	}
 
-//	@Bean
-//	public Docket enderecoApi() {
-//		return new Docket(DocumentationType.SWAGGER_2).select()
-//				.apis(RequestHandlerSelectors.basePackage("com.tokiomarine.avaliacao.controllers"))
-//				.paths(regex("/endereco.*")).build().apiInfo(metaData());
-//	}
 	
 	private ApiInfo metaData() {
 		return new ApiInfoBuilder().title("Avaliacao Tokio Marine").description("\"Spring Boot tokio marine\"")
